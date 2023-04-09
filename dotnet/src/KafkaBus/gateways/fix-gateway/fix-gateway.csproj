@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>br.com.badr.gateway.fix</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>br.com.badr.$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="QuickFIXn.Core" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX4.0" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX4.1" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX4.2" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX4.3" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX4.4" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX5.0" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX5.0SP1" Version="1.10.0" />
+    <PackageReference Include="QuickFIXn.FIX5.0SP2" Version="1.10.0" />
+  </ItemGroup>
+
+</Project>
