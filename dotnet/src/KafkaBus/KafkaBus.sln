@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusFramework", "BusFramework\BusFramework.csproj", "{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bus-framework", "libs\bus\bus-framework\bus-framework.csproj", "{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "servers", "servers", "{A8CE38B0-F81E-414F-85A2-03D0A4F1CBD9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{17243635-4EF9-49C6-A892-1373E7027352}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "admin-server", "servers\admin-server\admin-server.csproj", "{F81F9DAF-C73B-4AE7-A2BF-28D20C3D8871}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bus-kafka", "libs\bus\bus-kafka\bus-kafka.csproj", "{5DC7CF92-646E-4F85-86AB-17E205B123BA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bus", "bus", "{744DD338-4F47-42CD-A846-8855961354BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +25,23 @@ Global
 		{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81F9DAF-C73B-4AE7-A2BF-28D20C3D8871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81F9DAF-C73B-4AE7-A2BF-28D20C3D8871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81F9DAF-C73B-4AE7-A2BF-28D20C3D8871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81F9DAF-C73B-4AE7-A2BF-28D20C3D8871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DC7CF92-646E-4F85-86AB-17E205B123BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DC7CF92-646E-4F85-86AB-17E205B123BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DC7CF92-646E-4F85-86AB-17E205B123BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DC7CF92-646E-4F85-86AB-17E205B123BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB} = {744DD338-4F47-42CD-A846-8855961354BC}
+		{F81F9DAF-C73B-4AE7-A2BF-28D20C3D8871} = {A8CE38B0-F81E-414F-85A2-03D0A4F1CBD9}
+		{5DC7CF92-646E-4F85-86AB-17E205B123BA} = {744DD338-4F47-42CD-A846-8855961354BC}
+		{744DD338-4F47-42CD-A846-8855961354BC} = {17243635-4EF9-49C6-A892-1373E7027352}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE1C7CBD-A246-4434-9412-46E7A416FCAE}
