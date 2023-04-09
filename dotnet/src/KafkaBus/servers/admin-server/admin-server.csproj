@@ -17,9 +17,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libs\bus\bus-framework\bus-framework.csproj" />
     <ProjectReference Include="..\..\libs\bus\bus-kafka\bus-kafka.csproj" />
-    <ProjectReference Include="..\..\libs\common\common-framework\common-framework.csproj" />
+    <ProjectReference Include="..\..\libs\bus\bus\bus.csproj" />
+    <ProjectReference Include="..\..\libs\common\common\common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -21,4 +21,10 @@
     <PackageReference Include="QuickFIXn.FIX5.0SP2" Version="1.10.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="config\fwconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

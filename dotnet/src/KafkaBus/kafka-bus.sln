@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bus-framework", "libs\bus\bus-framework\bus-framework.csproj", "{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bus", "libs\bus\bus\bus.csproj", "{E20C0EDE-47FE-4ADC-BD53-61ECC7EC90DB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "servers", "servers", "{A8CE38B0-F81E-414F-85A2-03D0A4F1CBD9}"
 EndProject
@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C2C4E9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "websocket-gateway", "gateways\websocket-gateway\websocket-gateway.csproj", "{73AD285C-8DB8-4631-AA82-58B91F8A4612}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common-framework", "libs\common\common-framework\common-framework.csproj", "{3CF4E6A7-B9F8-4E37-B214-FA416746894F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "libs\common\common\common.csproj", "{A96421FD-4268-4824-AD88-7021B75C009B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,10 +57,10 @@ Global
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A96421FD-4268-4824-AD88-7021B75C009B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A96421FD-4268-4824-AD88-7021B75C009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A96421FD-4268-4824-AD88-7021B75C009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A96421FD-4268-4824-AD88-7021B75C009B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,7 +74,7 @@ Global
 		{BCFC1F7B-6161-4CC6-9889-395450427A86} = {40DA8215-8AC6-4C50-90A9-55B6D2799C6B}
 		{C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC} = {17243635-4EF9-49C6-A892-1373E7027352}
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612} = {40DA8215-8AC6-4C50-90A9-55B6D2799C6B}
-		{3CF4E6A7-B9F8-4E37-B214-FA416746894F} = {C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC}
+		{A96421FD-4268-4824-AD88-7021B75C009B} = {C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE1C7CBD-A246-4434-9412-46E7A416FCAE}

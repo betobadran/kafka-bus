@@ -1,9 +1,15 @@
 {
   "all": {
     "fw.comm.host": "127.0.0.1",
-    "fw.comm.port": "29092"
+    "fw.comm.port": 29092
   },
   "admin": {
     "http.port": 8081
+  },
+  "rest-gateway": {
+    "http.port": 8082
+  },
+  "websocket-gateway": {
+    "http.port": 8083
   }
 }

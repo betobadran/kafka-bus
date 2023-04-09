@@ -1,5 +1,9 @@
 ﻿namespace br.com.badr.framework.common.config {
     using Newtonsoft.Json;
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Net.Http;
     using System.Reflection;
 
     public class FwConfig : IFwConfig {
@@ -74,8 +78,8 @@
             _configCache = JsonConvert.DeserializeObject<IDictionary<String, IDictionary<String, String>>>(content);
         }
 
-        public T? Get<T>(string configKey) {
-            String? value = null;
+        public T Get<T>(string configKey) {
+            String value = null;
             if (_configCache.TryGetValue(_appPartHaKey, out var appPartHaConfig) && appPartHaConfig.TryGetValue(configKey, out value)) {
                 return (T)Convert.ChangeType(value, typeof(T));
             } else if (_configCache.TryGetValue(_appPartKey, out var appPartConfig) && appPartConfig.TryGetValue(configKey, out value)) {

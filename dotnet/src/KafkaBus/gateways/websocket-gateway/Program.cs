@@ -1,9 +1,18 @@
-namespace websocket_gateway {
+namespace br.com.badr.gateway.websocket {
+using br.com.badr.framework.common.config;
+
     public class Program {
         public static void Main(string[] args) {
+            var fwConfig = new FwConfig();
+
             var builder = WebApplication.CreateBuilder(args);
+            builder.WebHost.UseKestrel(o => {
+                o.AddServerHeader = false;
+                o.ListenAnyIP(fwConfig.Get<int>("http.port"));
+            });
 
             // Add services to the container.
+            builder.Services.AddSingleton<IFwConfig>(fwConfig);
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

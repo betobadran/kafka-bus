@@ -1,0 +1,6 @@
+{
+  "AppType": "websocket-gateway",
+  "AppPartition": "1",
+  "AppHaMode": "p",
+  "ConfigUrl": "http://127.0.0.1:8081/config"
+}

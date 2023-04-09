@@ -1,4 +1,6 @@
 ﻿namespace br.com.badr.framework.common.config {
+    using System;
+
     public class FwConfigModel {
         public String AppType { get; set; }
         public String AppPartition { get; set; }

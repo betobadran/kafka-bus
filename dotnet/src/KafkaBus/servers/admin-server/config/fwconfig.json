@@ -1,6 +1,6 @@
 {
   "AppType": "admin",
-  "AppPartition": "",
-  "AppHaMode": "",
+  "AppPartition": "1",
+  "AppHaMode": "replicated",
   "ConfigUrl": "file://config/environment.json"
 }

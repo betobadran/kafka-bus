@@ -11,8 +11,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="config\fwconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="config\fwconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\bus\bus-framework\bus.csproj" />
+    <ProjectReference Include="..\..\libs\bus\bus-kafka\bus-kafka.csproj" />
   </ItemGroup>
 
 </Project>
