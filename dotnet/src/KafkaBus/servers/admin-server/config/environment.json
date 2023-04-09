@@ -1,0 +1,9 @@
+{
+  "all": {
+    "fw.comm.host": "127.0.0.1",
+    "fw.comm.port": "29092"
+  },
+  "admin": {
+    "http.port": 8081
+  }
+}

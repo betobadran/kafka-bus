@@ -1,0 +1,6 @@
+{
+  "AppType": "admin",
+  "AppPartition": "",
+  "AppHaMode": "",
+  "ConfigUrl": "file://config/environment.json"
+}

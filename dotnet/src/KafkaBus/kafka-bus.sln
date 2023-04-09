@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C2C4E9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "websocket-gateway", "gateways\websocket-gateway\websocket-gateway.csproj", "{73AD285C-8DB8-4631-AA82-58B91F8A4612}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common-framework", "libs\common\common-framework\common-framework.csproj", "{3CF4E6A7-B9F8-4E37-B214-FA416746894F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF4E6A7-B9F8-4E37-B214-FA416746894F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +74,7 @@ Global
 		{BCFC1F7B-6161-4CC6-9889-395450427A86} = {40DA8215-8AC6-4C50-90A9-55B6D2799C6B}
 		{C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC} = {17243635-4EF9-49C6-A892-1373E7027352}
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612} = {40DA8215-8AC6-4C50-90A9-55B6D2799C6B}
+		{3CF4E6A7-B9F8-4E37-B214-FA416746894F} = {C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE1C7CBD-A246-4434-9412-46E7A416FCAE}

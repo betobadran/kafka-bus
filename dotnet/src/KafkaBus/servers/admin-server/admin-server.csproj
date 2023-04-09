@@ -12,12 +12,23 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\libs\bus\bus-framework\bus-framework.csproj" />
     <ProjectReference Include="..\..\libs\bus\bus-kafka\bus-kafka.csproj" />
+    <ProjectReference Include="..\..\libs\common\common-framework\common-framework.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="config\environment.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="config\fwconfig.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
