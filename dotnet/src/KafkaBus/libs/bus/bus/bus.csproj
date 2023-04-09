@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>br.com.badr.fw.$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>br.com.badr.fw.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <AssemblyName>br.com.badr.fw.bus</AssemblyName>
+    <RootNamespace>br.com.badr.fw.bus</RootNamespace>
   </PropertyGroup>
 
 </Project>

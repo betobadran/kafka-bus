@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,7 +6,7 @@
     <RootNamespace>br.com.badr.gateway.fix</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AssemblyName>br.com.badr.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyName>br.com.badr.gateway.fix</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +19,12 @@
     <PackageReference Include="QuickFIXn.FIX5.0" Version="1.10.0" />
     <PackageReference Include="QuickFIXn.FIX5.0SP1" Version="1.10.0" />
     <PackageReference Include="QuickFIXn.FIX5.0SP2" Version="1.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\libs\bus\bus-kafka\bus-kafka.csproj" />
+    <ProjectReference Include="..\..\libs\bus\bus\bus.csproj" />
+    <ProjectReference Include="..\..\libs\common\common\common.csproj" />
   </ItemGroup>
 
   <ItemGroup>

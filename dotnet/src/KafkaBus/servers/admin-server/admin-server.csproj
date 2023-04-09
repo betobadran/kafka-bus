@@ -7,7 +7,7 @@
     <RootNamespace>br.com.badr.server.admin</RootNamespace>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
-    <AssemblyName>br.com.badr.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyName>br.com.badr.server.admin</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

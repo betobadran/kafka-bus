@@ -7,7 +7,7 @@
     <RootNamespace>br.com.badr.gateway.rest</RootNamespace>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
-    <AssemblyName>br.com.badr.$(MSBuildProjectName)</AssemblyName>
+    <AssemblyName>br.com.badr.gateway.rest</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
@@ -26,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\libs\bus\bus-framework\bus.csproj" />
     <ProjectReference Include="..\..\libs\bus\bus-kafka\bus-kafka.csproj" />
+    <ProjectReference Include="..\..\libs\bus\bus\bus.csproj" />
   </ItemGroup>
 
 </Project>

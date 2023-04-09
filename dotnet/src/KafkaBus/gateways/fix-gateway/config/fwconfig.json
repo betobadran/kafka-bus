@@ -2,5 +2,5 @@
   "AppType": "fix-gateway",
   "AppPartition": "1",
   "AppHaMode": "p",
-  "ConfigUrl": "http://127.0.0.1:8081/config"
+  "ConfigUrl": "http://127.0.0.1:8081/api/config"
 }
