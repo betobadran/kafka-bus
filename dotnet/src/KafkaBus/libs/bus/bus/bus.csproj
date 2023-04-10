@@ -6,4 +6,17 @@
     <RootNamespace>br.com.badr.fw.bus</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="protobuf-net" Version="3.2.16" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\common\common.csproj" />
+  </ItemGroup>
+
 </Project>

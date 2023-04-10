@@ -2,7 +2,7 @@
     using System;
 
     public interface IFwComm {
-        void Start();
+        void Start(bool imAdminServer = false);
         void Stop();
         T Request<T>(String app, String resource, Object payload, TimeSpan? timeout);
         void Publish(String resource, Object payload);

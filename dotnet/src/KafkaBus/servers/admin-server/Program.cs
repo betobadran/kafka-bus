@@ -1,5 +1,7 @@
 namespace br.com.badr.server.admin {
     using br.com.badr.framework.common.config;
+    using br.com.badr.fw.bus.comm;
+    using br.com.badr.fw.bus.kafka.comm;
     using br.com.badr.server.admin.services;
 
     public class Program {
@@ -15,6 +17,7 @@ namespace br.com.badr.server.admin {
             // Add services to the container.
             builder.Services.AddSingleton<IFwConfig>(fwConfig);
             builder.Services.AddSingleton<IConfigService, ConfigService>();
+            builder.Services.AddSingleton<IFwComm, FwCommKafka>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -34,7 +37,13 @@ namespace br.com.badr.server.admin {
 
             app.MapControllers();
 
-            app.Run();
+            var runTask = app.RunAsync();
+            ForceLoad(app.Services);
+            runTask.Wait();
+        }
+
+        private static void ForceLoad(IServiceProvider services) {
+            services.GetService<IFwComm>();
         }
     }
 }

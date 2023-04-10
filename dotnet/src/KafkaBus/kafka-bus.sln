@@ -17,15 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bus", "bus", "{744DD338-4F4
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gateways", "gateways", "{40DA8215-8AC6-4C50-90A9-55B6D2799C6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rest-gateway", "gateways\rest-gateway\rest-gateway.csproj", "{1F41A977-09C5-4597-BEC5-E625BED26B94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rest-gateway", "gateways\rest-gateway\rest-gateway.csproj", "{1F41A977-09C5-4597-BEC5-E625BED26B94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fix-gateway", "gateways\fix-gateway\fix-gateway.csproj", "{BCFC1F7B-6161-4CC6-9889-395450427A86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fix-gateway", "gateways\fix-gateway\fix-gateway.csproj", "{BCFC1F7B-6161-4CC6-9889-395450427A86}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "common", "common", "{C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "websocket-gateway", "gateways\websocket-gateway\websocket-gateway.csproj", "{73AD285C-8DB8-4631-AA82-58B91F8A4612}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "websocket-gateway", "gateways\websocket-gateway\websocket-gateway.csproj", "{73AD285C-8DB8-4631-AA82-58B91F8A4612}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "libs\common\common\common.csproj", "{A96421FD-4268-4824-AD88-7021B75C009B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "common", "libs\common\common\common.csproj", "{A96421FD-4268-4824-AD88-7021B75C009B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "audit-server", "servers\audit-server\audit-server.csproj", "{EA9EE77A-C519-4959-ACB1-89B0FDE80D11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -61,6 +63,10 @@ Global
 		{A96421FD-4268-4824-AD88-7021B75C009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A96421FD-4268-4824-AD88-7021B75C009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A96421FD-4268-4824-AD88-7021B75C009B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9EE77A-C519-4959-ACB1-89B0FDE80D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9EE77A-C519-4959-ACB1-89B0FDE80D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9EE77A-C519-4959-ACB1-89B0FDE80D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9EE77A-C519-4959-ACB1-89B0FDE80D11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -75,6 +81,7 @@ Global
 		{C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC} = {17243635-4EF9-49C6-A892-1373E7027352}
 		{73AD285C-8DB8-4631-AA82-58B91F8A4612} = {40DA8215-8AC6-4C50-90A9-55B6D2799C6B}
 		{A96421FD-4268-4824-AD88-7021B75C009B} = {C2C4E9F8-E0FF-4087-9ACA-67F73D73AEFC}
+		{EA9EE77A-C519-4959-ACB1-89B0FDE80D11} = {A8CE38B0-F81E-414F-85A2-03D0A4F1CBD9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BE1C7CBD-A246-4434-9412-46E7A416FCAE}
