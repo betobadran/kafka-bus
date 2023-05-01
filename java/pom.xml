@@ -1,28 +1,48 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>br.com.badr</groupId>
 	<artifactId>kafka-bus</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>kafka-bus</name>
+	<scm>
+		<connection>scm:git:git://github.com/betobadran/kafka-bus.git</connection>
+		<developerConnection>
+			scm:git:ssh://git@github.com:betobadran/kafka-bus.git</developerConnection>
+		<url>https://github.com/betobadran/kafka-bus</url>
+	</scm>
 	<modules>
 		<module>common</module>
 		<module>gateway-rest</module>
+		<module>gateway-fix</module>
+		<module>gateway-websocket</module>
+		<module>app-admin-server</module>
+		<module>fw-comm-kafka</module>
+		<module>fw-comm</module>
 	</modules>
+
+	<properties>
+		<org.springframework.boot.spring-boot-starter-logging.version>3.0.4</org.springframework.boot.spring-boot-starter-logging.version>
+		<com.google.code.gson.gson.version>2.10.1</com.google.code.gson.gson.version>
+		<org.apache.kafka.kafka-clients.version>3.4.0</org.apache.kafka.kafka-clients.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
-			<version>3.0.4</version>
+			<version>${org.springframework.boot.spring-boot-starter-logging.version}</version>
 			<exclusions>
-    <exclusion>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-logging</artifactId>
-    </exclusion>
-  </exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>

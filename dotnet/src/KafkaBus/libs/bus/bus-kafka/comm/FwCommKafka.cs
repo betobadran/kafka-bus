@@ -24,7 +24,7 @@
         }
 
         public override void Start(bool imAdminServer = false) {
-            throw new NotImplementedException();
+            
         }
 
         public override void Stop() {
@@ -35,11 +35,11 @@
             throw new NotImplementedException();
         }
 
-        public override T Request<T>(string app, string resource, object payload, TimeSpan? timeout) {
+        public override T Request<T>(string resource, object payload, TimeSpan? timeout) {
             throw new NotImplementedException();
         }
 
-        public override void Subscribe<T>(string app, string resource, Action<T> callback) {
+        public override void Subscribe<T>(string resource, Action<T> callback) {
             throw new NotImplementedException();
         }
     }

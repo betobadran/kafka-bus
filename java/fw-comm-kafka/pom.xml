@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>br.com.badr</groupId>
+    <artifactId>kafka-bus</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>fw-comm-kafka</artifactId>
+  <dependencies>
+    <dependency>
+		  <groupId>${project.groupId}</groupId>
+		  <artifactId>fw-common</artifactId>
+		  <version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+		  <groupId>${project.groupId}</groupId>
+		  <artifactId>fw-comm</artifactId>
+		  <version>${project.version}</version>
+	  </dependency>
+	  <dependency>
+    	<groupId>org.apache.kafka</groupId>
+    	<artifactId>kafka-clients</artifactId>
+    	<version>${org.apache.kafka.kafka-clients.version}</version>
+	  </dependency>
+	  <dependency>
+	  	<groupId>br.com.badr</groupId>
+	  	<artifactId>fw-comm</artifactId>
+	  	<version>0.0.1-SNAPSHOT</version>
+	  </dependency>
+  </dependencies>
+</project>

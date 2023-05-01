@@ -14,7 +14,7 @@
         private readonly string _appPartKey;
         private readonly string _appKey;
 
-        private IDictionary<String, IDictionary<String, String>> _configCache;
+        private IDictionary<String, IDictionary<String, Object>> _configCache;
         private HttpClient _httpClient;
 
         public FwConfig() {
@@ -75,11 +75,11 @@
             if (String.IsNullOrEmpty(content)) {
                 throw new FileLoadException("Fail to generate config map, content was null");
             }
-            _configCache = JsonConvert.DeserializeObject<IDictionary<String, IDictionary<String, String>>>(content);
+            _configCache = JsonConvert.DeserializeObject<IDictionary<String, IDictionary<String, Object>>>(content);
         }
 
         public T Get<T>(string configKey) {
-            String value = null;
+            Object value = null;
             if (_configCache.TryGetValue(_appPartHaKey, out var appPartHaConfig) && appPartHaConfig.TryGetValue(configKey, out value)) {
                 return (T)Convert.ChangeType(value, typeof(T));
             } else if (_configCache.TryGetValue(_appPartKey, out var appPartConfig) && appPartConfig.TryGetValue(configKey, out value)) {
@@ -93,8 +93,8 @@
             return default;
         }
 
-        public IDictionary<String, IDictionary<String, String>> Get() {
-            return new Dictionary<String, IDictionary<String, String>>(_configCache);
+        public IDictionary<String, IDictionary<String, Object>> Get() {
+            return new Dictionary<String, IDictionary<String, Object>>(_configCache);
         }
     }
 }

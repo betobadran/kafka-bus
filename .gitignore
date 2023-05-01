@@ -420,3 +420,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+**.project
+**/.classpath
+.vscode/settings.json
+.settings
+java/target

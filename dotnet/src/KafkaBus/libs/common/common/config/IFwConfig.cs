@@ -3,7 +3,7 @@
     using System.Collections.Generic;
 
     public interface IFwConfig {
-        IDictionary<String, IDictionary<String, String>> Get();
+        IDictionary<String, IDictionary<String, Object>> Get();
         T Get<T>(String configKey);
     }
 }

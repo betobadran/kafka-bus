@@ -1,6 +1,6 @@
 {
   "AppType": "audit",
-  "AppPartition": "1",
+  "AppPartition": 1,
   "AppHaMode": "replicated",
   "ConfigUrl": "http://127.0.0.1:8081/api/config"
 }

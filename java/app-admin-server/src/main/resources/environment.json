@@ -1,0 +1,8 @@
+{
+  "all":{
+    "fw.comm.name":"local",
+    "fw.comm.default.request.timeout":5000,
+    "fw.comm.host":"127.0.0.1",
+    "fw.comm.port":9092
+  }
+}
