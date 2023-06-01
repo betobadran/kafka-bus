@@ -426,3 +426,5 @@ FodyWeavers.xsd
 .vscode/settings.json
 .settings
 java/target
+java/*/target
+java/*/.settings
