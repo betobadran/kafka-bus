@@ -8,7 +8,7 @@
             _fwConfig = fwConfig;
         }
 
-        public IDictionary<string, IDictionary<string, string>> Get() {
+        public IDictionary<string, IDictionary<string, object>> Get() {
             return _fwConfig.Get();
         }
     }
